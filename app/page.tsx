@@ -92,6 +92,7 @@ export default function Portfolio() {
             <div className="nav-links">
               <a href="#about">About</a>
               <a href="#work">Work</a>
+              <a href="#resume">Resume</a>
               <a href="#blog">Blog</a>
               <a href="#contact">Contact</a>
             </div>
@@ -142,6 +143,9 @@ export default function Portfolio() {
               </a>
               <a href="#work" onClick={handleLinkClick}>
                 Work
+              </a>
+              <a href="#resume" onClick={handleLinkClick}>
+                Resume
               </a>
               <a href="#blog" onClick={handleLinkClick}>
                 Blog
@@ -337,6 +341,95 @@ export default function Portfolio() {
           </div>
         </section>
 
+        <section id="resume" className="resume-section animate-on-scroll">
+          <div className="container">
+            <div className="section-header">
+              <h2 className="section-title">Interactive Resume</h2>
+            </div>
+            
+            <div className="resume-container">
+              
+              <div className="resume-block">
+                <h3>Experience & Projects</h3>
+                
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">BookMyBox.online</div>
+                    <div className="resume-item-subtitle">AI-Powered Turf Booking Platform | Full Stack Developer</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>Engineered an AI-powered turf booking platform with real-time slot management, dynamic pricing, and automated booking workflows.</li>
+                    <li>Built a conversational “Talk-to-Book” voice assistant using Groq Whisper Large V3 and Murf AI for hands-free booking interactions.</li>
+                    <li>Implemented WhatsApp OTP authentication and automated booking notifications using Baileys API.</li>
+                    <li>Developed real-time slot synchronization with Socket.IO to prevent double bookings across concurrent users.</li>
+                    <li>Integrated the SabPaisa payment gateway with custom Node.js encryption/decryption utilities for secure transaction validation.</li>
+                    <li>Designed an admin analytics dashboard with maintenance slot blocking and Express Cron automation.</li>
+                  </ul>
+                </div>
+                
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">Corona Marine</div>
+                    <div className="resume-item-subtitle">AI-Powered Maritime Spares Ecosystem | Full Stack Developer</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>AI-powered catalog platform for automated content and sales optimization.</li>
+                    <li>Client-side image processing using HuggingFace ONNX to reduce server cost.</li>
+                    <li>Server-side AI integration using Gemini for SEO-ready product descriptions.</li>
+                    <li>Built with Next.js + React Server Components for faster load time and improved SEO.</li>
+                    <li>Implemented “Request Quote” + WhatsApp flow for lead conversion.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">Media Masala CRM</div>
+                    <div className="resume-item-subtitle">Intelligent Operational Command Center | Full Stack Developer</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>Built a high-performance CRM using Next.js and Express for complex workflows.</li>
+                    <li>Implemented multi-tenant RBAC for role-based data visibility.</li>
+                    <li>Created automated sales pipeline and task creation workflows.</li>
+                    <li>Optimized PostgreSQL (Prisma) queries with pagination and debounced search.</li>
+                    <li>Developed HR tools with geo-attendance and automated EOD PDF reports.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="resume-block">
+                <h3>Education</h3>
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">Bachelor of Computer Applications (BCA)</div>
+                    <div className="resume-item-subtitle">Swami Sahajanand College, Bhavnagar | 2023 – 2026 | CGPA: 7.8</div>
+                  </div>
+                </div>
+                
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">12th Grade (Higher Secondary)</div>
+                    <div className="resume-item-subtitle">Mahdi School, Bhavnagar | 2023</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>Achieved 90 percentile and 74% overall percentage.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">10th Grade (Secondary)</div>
+                    <div className="resume-item-subtitle">Mahdi School, Bhavnagar | 2021</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>Achieved 96 percentile and 90% overall percentage.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <section id="contact" className="section contact-section">
           <div className="container">
             <div className="contact-wrapper animate-on-scroll">
@@ -399,6 +492,7 @@ export default function Portfolio() {
               <nav className="footer-nav">
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
+                <a href="#resume">Resume</a>
                 <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
               </nav>

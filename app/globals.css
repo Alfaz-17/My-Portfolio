@@ -794,6 +794,88 @@ footer {
   opacity: 0.9;
 }
 
+/* Resume Section Styles */
+.resume-section {
+  background-color: var(--bg);
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-block {
+  margin-bottom: 60px;
+}
+
+.resume-block h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.resume-item {
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 24px;
+  border-left: 2px solid var(--border);
+}
+
+.resume-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+}
+
+.resume-item-header {
+  margin-bottom: 12px;
+}
+
+.resume-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.resume-item-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.resume-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-list li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 16px;
+}
+
+.resume-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
 /* Added tilted moving marquee banner styles */
 .marquee-wrapper {
   position: relative;
