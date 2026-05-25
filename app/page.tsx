@@ -283,6 +283,18 @@ export default function Portfolio() {
                   <a href="/projects/mediamasala" className="read-more" style={{display: 'inline-block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, textDecoration: 'none'}}>Read Case Study →</a>
                 </div>
               </article>
+
+              <article className="card animate-on-scroll">
+                <img src="/inbill-ss.png" alt="InBill ERP" className="card-image" />
+                <div className="card-content">
+                  <span className="card-tag">AI & Desktop Software</span>
+                  <h3 className="card-title">InBill ERP</h3>
+                  <p className="card-desc">
+                    A robust, AI-powered desktop billing software with local-first database architecture and automated invoice parsing via Google Gemini.
+                  </p>
+                  <a href="/projects/inbill" className="read-more" style={{display: 'inline-block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, textDecoration: 'none'}}>Read Case Study →</a>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -392,6 +404,19 @@ export default function Portfolio() {
                     <li>Created automated sales pipeline and task creation workflows.</li>
                     <li>Optimized PostgreSQL (Prisma) queries with pagination and debounced search.</li>
                     <li>Developed HR tools with geo-attendance and automated EOD PDF reports.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <div className="resume-item-title">InBill ERP</div>
+                    <div className="resume-item-subtitle">AI-Powered Universal ERP System | Desktop & AI Developer</div>
+                  </div>
+                  <ul className="resume-list">
+                    <li>Architected a robust, 'Local-First' desktop application using Electron and Next.js for zero-latency operations.</li>
+                    <li>Integrated Google Gemini 2.0 Flash for AI-powered Optical Character Recognition (OCR) to automatically extract product details from supplier invoices.</li>
+                    <li>Developed an intelligent dashboard providing AI-driven business insights based on daily sales trends and stock risk metrics.</li>
+                    <li>Engineered an asynchronous cloud sync engine using Neon PostgreSQL to securely backup data and maintain multi-device consistency.</li>
                   </ul>
                 </div>
               </div>

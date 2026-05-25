@@ -119,5 +119,38 @@ export const projects: Project[] = [
     imageUrl: "/crm-ss.png",
     year: "2026",
     role: "Full Stack Developer"
+  },
+  {
+    slug: "inbill",
+    title: "InBill ERP",
+    tagline: "AI-Powered Universal ERP System",
+    description: "A hybrid local-first desktop application with AI-driven invoice parsing and cloud synchronization.",
+    longDescription: "InBill ERP is a highly robust, professional-grade desktop application built with Electron and Next.js. It features a unique 'Local-First' architecture, ensuring zero-latency operations by using SQLite locally while asynchronously mirroring data to a Neon PostgreSQL cloud database. The true power of InBill lies in its AI capabilities, utilizing Google Gemini 2.0 Flash to automatically extract product details from supplier invoices (AI OCR) and generate intelligent business insights based on daily sales trends.",
+    techStack: ["Electron", "Next.js", "SQLite", "PostgreSQL", "Google Gemini AI", "Tailwind CSS"],
+    features: [
+      {
+        title: "AI Invoice Parsing",
+        description: "Uses Google Gemini AI OCR to instantly scan physical invoices and automatically populate the database with products, quantities, and tax codes.",
+        icon: "search"
+      },
+      {
+        title: "Smart Business Insights",
+        description: "An AI-powered dashboard that analyzes daily performance and alerts owners to stock risks and revenue trends.",
+        icon: "zap"
+      },
+      {
+        title: "Local-First Architecture",
+        description: "Works blazingly fast offline using a local SQLite database, and automatically securely syncs to the cloud when internet is available.",
+        icon: "database"
+      },
+      {
+        title: "Universal Sync",
+        description: "Maintains a flawless real-time connection across multiple devices using robust backend batch-processing and SSL-hardened PostgreSQL.",
+        icon: "workflow"
+      }
+    ],
+    imageUrl: "/inbill-ss.png",
+    year: "2026",
+    role: "Desktop & AI Developer"
   }
 ];
