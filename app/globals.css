@@ -876,6 +876,55 @@ footer {
   font-weight: bold;
 }
 
+/* Technologies Grid Styles */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 20px;
+  border-color: var(--accent);
+}
+
+.tech-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.3s;
+}
+
+.tech-card:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+.tech-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.3s;
+}
+
+.tech-card:hover .tech-name {
+  color: var(--text-primary);
+}
+
 /* Added tilted moving marquee banner styles */
 .marquee-wrapper {
   position: relative;

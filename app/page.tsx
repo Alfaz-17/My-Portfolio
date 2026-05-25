@@ -335,9 +335,62 @@ export default function Portfolio() {
                 </div>
               </article>
             </div>
+            
+            <div className="section-header animate-on-scroll" style={{ marginTop: '80px' }}>
+              <h2 className="section-title">Technologies</h2>
+            </div>
+            <div className="tech-grid">
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                <span className="tech-name">React</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+                <span className="tech-name">Next.js</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <span className="tech-name">Node.js</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" />
+                <span className="tech-name">Express</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                <span className="tech-name">MongoDB</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                <span className="tech-name">PostgreSQL</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma" />
+                <span className="tech-name">Prisma</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+                <span className="tech-name">Tailwind CSS</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                <span className="tech-name">JavaScript</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                <span className="tech-name">TypeScript</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+                <span className="tech-name">Java</span>
+              </div>
+              <div className="tech-card animate-on-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                <span className="tech-name">C++</span>
+              </div>
+            </div>
           </div>
         </section>
-
         <section className="newsletter animate-on-scroll">
           <div className="container">
             <div className="newsletter-inner">
