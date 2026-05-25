@@ -32,7 +32,7 @@ export default function Portfolio() {
     }
 
     const textElements = document.querySelectorAll(
-      ".hero-bio, .section-title, .newsletter h2, .blog-section h2, .contact-section h2",
+      ".section-title, .newsletter h2, .blog-section h2, .contact-section h2",
     )
     textElements.forEach((el) => {
       if (!el.classList.contains("animated")) {

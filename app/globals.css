@@ -358,14 +358,9 @@ nav {
 .hero-bio {
   font-size: 24px;
   max-width: 600px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: var(--text-secondary);
-}
-
-.hero-bio span {
-  color: var(--text-primary);
   font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-primary);
 }
 
 /* Added letter-by-letter blur animation styles */
@@ -406,11 +401,7 @@ nav {
   }
 }
 
-/* Preserve spans for special styling in hero bio */
-.hero-bio span span {
-  color: var(--text-primary);
-  font-weight: 400;
-}
+/* Preserve special styling in hero bio if needed in the future */
 
 .section {
   padding: 80px 0px;
@@ -896,32 +887,15 @@ footer {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.tech-card:hover {
-  transform: translateY(-5px);
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 20px;
-  border-color: var(--accent);
-}
-
 .tech-card img {
   width: 48px;
   height: 48px;
   margin-bottom: 12px;
-  filter: grayscale(100%) opacity(0.7);
-  transition: all 0.3s;
-}
-
-.tech-card:hover img {
-  filter: grayscale(0%) opacity(1);
 }
 
 .tech-name {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-secondary);
-  transition: color 0.3s;
-}
-
-.tech-card:hover .tech-name {
   color: var(--text-primary);
 }
 
