@@ -424,7 +424,7 @@ export default function Portfolio() {
                   </div>
                   <ul className="resume-list">
                     <li>Engineered an AI-powered turf booking platform with real-time slot management, dynamic pricing, and automated booking workflows.</li>
-                    <li>Built a conversational “Talk-to-Book” voice assistant using Groq Whisper Large V3 and Murf AI for hands-free booking interactions.</li>
+                    <li>Engineered a context-aware AI Chat Assistant using Groq LLM, capable of understanding natural language and retaining multi-turn conversational memory for seamless slot queries.</li>
                     <li>Implemented WhatsApp OTP authentication and automated booking notifications using Baileys API.</li>
                     <li>Developed real-time slot synchronization with Socket.IO to prevent double bookings across concurrent users.</li>
                     <li>Integrated the SabPaisa payment gateway with custom Node.js encryption/decryption utilities for secure transaction validation.</li>

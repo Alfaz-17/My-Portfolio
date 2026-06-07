@@ -21,15 +21,15 @@ export const projects: Project[] = [
   {
     slug: "bookmybox",
     title: "BookMyBox.online",
-    tagline: "AI-Powered Turf Booking Platform",
-    description: "An intelligent platform for booking sports venues featuring a voice-activated assistant and real-time slot management.",
-    longDescription: "BookMyBox makes booking cricket box venues incredibly easy. Instead of clicking through menus, users can simply talk to our AI voice assistant to find and book available slots. The platform uses WhatsApp for quick logins and notifications, and it syncs bookings in real-time so two people can't accidentally book the same slot.",
-    techStack: ["React.js", "Node.js", "Express", "MongoDB", "Socket.IO", "AI Voice API"],
+    tagline: "Real-Time Turf Booking Web App",
+    description: "A full-stack booking platform featuring real-time slot updates, Redis queues, and secure WhatsApp authentication.",
+    longDescription: "BookMyBox is a robust backend-heavy application I built to handle turf reservations. To prevent double-bookings, I used Socket.IO for real-time slot updates. I also implemented advanced backend concepts like Redis and BullMQ for background job processing, Express Rate Limiting to prevent API abuse, and integrated a custom WhatsApp OTP login flow using the Baileys library.",
+    techStack: ["Node.js", "Express", "MongoDB", "Socket.IO", "Redis", "React.js"],
     features: [
       {
-        title: "AI Voice Assistant",
-        description: "A smart 'Talk-to-Book' feature that understands natural language, letting users book slots simply by speaking.",
-        icon: "mic"
+        title: "Real-Time WebSockets",
+        description: "Integrated Socket.IO to broadcast live slot availability, ensuring users instantly see when a turf is booked.",
+        icon: "clock"
       },
       {
         title: "WhatsApp Login",
@@ -37,48 +37,48 @@ export const projects: Project[] = [
         icon: "message"
       },
       {
-        title: "Real-Time Booking",
-        description: "Live updates ensure that when a slot is booked, it instantly shows as unavailable for everyone else.",
-        icon: "clock"
+        title: "API Rate Limiting",
+        description: "Secured the Express backend using rate limiters to protect endpoints against brute-force and spam attacks.",
+        icon: "shield"
       },
       {
-        title: "Admin Dashboard",
-        description: "A complete control panel for turf owners to track revenue, manage pricing, and block out maintenance times.",
-        icon: "chart"
+        title: "WhatsApp OTP Login",
+        description: "Built a seamless login experience by integrating WhatsApp messaging for secure OTP delivery.",
+        icon: "message"
       }
     ],
     liveUrl: "https://bookmybox.online",
     imageUrl: "/bookmybox-ss.png",
     year: "2025",
-    role: "Full Stack Developer"
+    role: "Backend / Full Stack Developer"
   },
   {
     slug: "coronamarine",
     title: "Corona Marine",
-    tagline: "AI-Powered Maritime Spares Ecosystem",
-    description: "A modern B2B product catalog that uses Artificial Intelligence to optimize content and improve search engine rankings.",
-    longDescription: "Corona Marine is a fast and modern platform designed for selling maritime spare parts. To save time and improve Google rankings, the platform uses AI to automatically write detailed, SEO-friendly descriptions for every product. It also features smart image processing that runs directly in the user's browser, making the website incredibly fast and cost-effective.",
-    techStack: ["Next.js", "React", "Google Gemini AI", "Node.js", "Tailwind CSS"],
+    tagline: "Next.js B2B Catalog & AI",
+    description: "A high-performance product catalog built with Next.js, featuring AI content generation and strict form validation.",
+    longDescription: "I developed the frontend and backend for Corona Marine, focusing heavily on performance and SEO using Next.js. I successfully integrated the Google GenAI API to automatically generate SEO-friendly product descriptions. I also ensured a highly secure and robust frontend by managing complex forms with React Hook Form and validating all inputs with Zod.",
+    techStack: ["Next.js", "React", "Tailwind CSS", "Google GenAI", "Zod"],
     features: [
       {
-        title: "Smart Image Processing",
-        description: "Advanced image processing that runs directly on the user's device, making the website faster and reducing server costs.",
-        icon: "image"
-      },
-      {
-        title: "AI Content Generation",
-        description: "Automatically writes high-quality, search-engine-optimized product descriptions using Google's Gemini AI.",
-        icon: "search"
-      },
-      {
-        title: "Super Fast Speeds",
-        description: "Built with modern Next.js technology to ensure pages load instantly, providing a great experience for buyers.",
+        title: "Next.js SSR",
+        description: "Leveraged Next.js Server-Side Rendering to deliver fast, SEO-optimized pages for the maritime catalog.",
         icon: "zap"
       },
       {
-        title: "Quick Quotes",
-        description: "A streamlined 'Request Quote' system that connects buyers directly to the sales team via WhatsApp.",
-        icon: "link"
+        title: "AI Integration",
+        description: "Implemented the Google Gemini API to dynamically generate intelligent and descriptive product content.",
+        icon: "search"
+      },
+      {
+        title: "Schema Validation",
+        description: "Used Zod paired with React Hook Form to enforce strict, type-safe validation on all user inputs and quotes.",
+        icon: "shield"
+      },
+      {
+        title: "Responsive UI",
+        description: "Built a modern, mobile-first interface using Tailwind CSS and Radix UI components.",
+        icon: "image"
       }
     ],
     liveUrl: "https://coronamarineparts.com",
@@ -89,29 +89,29 @@ export const projects: Project[] = [
   {
     slug: "mediamasala",
     title: "Media Masala CRM",
-    tagline: "Intelligent Operational Command Center",
-    description: "A complete Customer Relationship Management (CRM) system for managing sales pipelines, tasks, and employee attendance.",
-    longDescription: "Media Masala CRM is an all-in-one dashboard built for media production teams. It helps the company track new sales leads, manage ongoing projects, and assign tasks to employees. It also includes powerful HR tools, like location-based attendance tracking and automated daily reports, all secured with strict role-based access so everyone only sees what they need to see.",
-    techStack: ["Next.js", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+    tagline: "Internal CRM & Task Dashboard",
+    description: "A secure internal dashboard featuring role-based access and optimized data management.",
+    longDescription: "Media Masala CRM is a management dashboard I helped build for tracking leads and team tasks. I focused on building secure endpoints and optimized the UI to handle large datasets effectively. I implemented a strict Role-Based Access Control (RBAC) system to ensure that managers and employees only see data relevant to their specific permissions.",
+    techStack: ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
     features: [
       {
-        title: "Role-Based Access",
-        description: "Strict security rules that ensure managers, employees, and admins only see the data and pages relevant to their specific roles.",
+        title: "Role-Based Access (RBAC)",
+        description: "Designed secure middleware to verify user roles before granting access to sensitive management routes.",
         icon: "shield"
       },
       {
-        title: "Sales Pipelines",
-        description: "Easy-to-use workflows that help the team track potential clients from the first contact all the way to a completed project.",
-        icon: "workflow"
-      },
-      {
-        title: "Fast Data Tables",
-        description: "Quick and responsive data tables that make it easy to search, filter, and manage thousands of records without slowing down.",
+        title: "Data Optimization",
+        description: "Optimized large data tables by fetching data in chunks via pagination and structured database queries.",
         icon: "database"
       },
       {
-        title: "HR & Attendance Tools",
-        description: "Built-in tools for employees to check in with their GPS location, request time off, and automatically generate daily work reports.",
+        title: "Task Tracking",
+        description: "Built relational database models to track employee tasks, sales leads, and daily operations.",
+        icon: "workflow"
+      },
+      {
+        title: "Secure Authentication",
+        description: "Implemented a robust login and session management system to protect company data.",
         icon: "users"
       }
     ],
@@ -123,34 +123,34 @@ export const projects: Project[] = [
   {
     slug: "inbill",
     title: "InBill ERP",
-    tagline: "AI-Powered Universal ERP System",
-    description: "A hybrid local-first desktop application with AI-driven invoice parsing and cloud synchronization.",
-    longDescription: "InBill ERP is a highly robust, professional-grade desktop application built with Electron and Next.js. It features a unique 'Local-First' architecture, ensuring zero-latency operations by using SQLite locally while asynchronously mirroring data to a Neon PostgreSQL cloud database. The true power of InBill lies in its AI capabilities, utilizing Google Gemini 2.0 Flash to automatically extract product details from supplier invoices (AI OCR) and generate intelligent business insights based on daily sales trends.",
-    techStack: ["Electron", "Next.js", "SQLite", "PostgreSQL", "Google Gemini AI", "Tailwind CSS"],
+    tagline: "Desktop Billing Application",
+    description: "A local-first desktop application integrating Electron, Next.js, and advanced state management.",
+    longDescription: "InBill is an advanced desktop billing application I developed to learn cross-platform development using Electron. I built a true 'local-first' architecture using better-sqlite3 for instantaneous offline database queries. To manage complex async data and server state, I utilized TanStack React Query, and handled large inventory tables using TanStack Table.",
+    techStack: ["Electron", "Next.js", "SQLite", "React Query", "Google GenAI"],
     features: [
       {
-        title: "AI Invoice Parsing",
-        description: "Uses Google Gemini AI OCR to instantly scan physical invoices and automatically populate the database with products, quantities, and tax codes.",
-        icon: "search"
-      },
-      {
-        title: "Smart Business Insights",
-        description: "An AI-powered dashboard that analyzes daily performance and alerts owners to stock risks and revenue trends.",
-        icon: "zap"
-      },
-      {
         title: "Local-First Architecture",
-        description: "Works blazingly fast offline using a local SQLite database, and automatically securely syncs to the cloud when internet is available.",
+        description: "Integrated 'better-sqlite3' within Electron for blazingly fast, offline-capable database operations.",
         icon: "database"
       },
       {
-        title: "Universal Sync",
-        description: "Maintains a flawless real-time connection across multiple devices using robust backend batch-processing and SSL-hardened PostgreSQL.",
+        title: "Advanced Data Fetching",
+        description: "Utilized TanStack React Query for intelligent caching, background syncing, and state management.",
+        icon: "zap"
+      },
+      {
+        title: "Complex Data Tables",
+        description: "Implemented highly customizable and performant data grids using TanStack Table for inventory management.",
         icon: "workflow"
+      },
+      {
+        title: "AI Invoice Parsing",
+        description: "Experimented with integrating Google GenAI to read and extract product details from supplier invoices.",
+        icon: "search"
       }
     ],
     imageUrl: "/inbill-ss.png",
     year: "2026",
-    role: "Desktop & AI Developer"
+    role: "Desktop & Web Developer"
   }
 ];
