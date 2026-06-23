@@ -276,7 +276,7 @@ export default function Portfolio() {
                   <span className="card-tag">AI & Full Stack</span>
                   <h3 className="card-title">BookMyBox.online</h3>
                   <p className="card-desc">
-                    An intelligent platform for booking sports venues featuring a voice-activated assistant and real-time slot management.
+                    An AI-powered sports venue booking platform built with TypeScript, featuring a smart chat agent, Cashfree payments, Winston logging, and fully containerized Docker CI/CD pipelines.
                   </p>
                   <a href="/projects/bookmybox" className="read-more" style={{display: 'inline-block', marginTop: '1rem', color: 'var(--primary)', fontWeight: 600, textDecoration: 'none'}}>Read Case Study →</a>
                 </div>
@@ -445,12 +445,11 @@ export default function Portfolio() {
                     <div className="resume-item-subtitle">AI-Powered Turf Booking Platform | Full Stack Developer</div>
                   </div>
                   <ul className="resume-list">
-                    <li>Engineered an AI-powered turf booking platform with real-time slot management, dynamic pricing, and automated booking workflows.</li>
-                    <li>Engineered a context-aware AI Chat Assistant using Groq LLM, capable of understanding natural language and retaining multi-turn conversational memory for seamless slot queries.</li>
-                    <li>Implemented WhatsApp OTP authentication and automated booking notifications using Baileys API.</li>
-                    <li>Developed real-time slot synchronization with Socket.IO to prevent double bookings across concurrent users.</li>
-                    <li>Integrated the SabPaisa payment gateway with custom Node.js encryption/decryption utilities for secure transaction validation.</li>
-                    <li>Designed an admin analytics dashboard with maintenance slot blocking and Express Cron automation.</li>
+                    <li>Engineered a high-concurrency turf booking platform in TypeScript featuring Socket.IO for real-time slot synchronization and dynamic pricing.</li>
+                    <li>Developed a context-aware AI Chat Assistant to parse natural language queries and handle automated slot reservations.</li>
+                    <li>Integrated the Cashfree payment gateway with custom cryptographic validation utilities and robust webhook handling.</li>
+                    <li>Containerized the MERN stack application using Docker and configured CI/CD workflows for automated deployments.</li>
+                    <li>Implemented structured Winston logging and built comprehensive unit/integration test suites using Vitest to guarantee reliability.</li>
                   </ul>
                 </div>
                 

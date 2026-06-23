@@ -21,30 +21,35 @@ export const projects: Project[] = [
   {
     slug: "bookmybox",
     title: "BookMyBox.online",
-    tagline: "Real-Time Turf Booking Web App",
-    description: "A full-stack booking platform featuring real-time slot updates, Redis queues, and secure WhatsApp authentication.",
-    longDescription: "BookMyBox is a robust backend-heavy application I built to handle turf reservations. To prevent double-bookings, I used Socket.IO for real-time slot updates. I also implemented advanced backend concepts like Redis and BullMQ for background job processing, Express Rate Limiting to prevent API abuse, and integrated a custom WhatsApp OTP login flow using the Baileys library.",
-    techStack: ["Node.js", "Express", "MongoDB", "Socket.IO", "Redis", "React.js"],
+    tagline: "AI-Powered Turf Booking Web App with Docker & CI/CD",
+    description: "A full-stack booking platform built with TypeScript, featuring a smart AI Chat Agent, Cashfree payments, real-time slot updates, Winston logger, and fully automated Docker CI/CD pipelines.",
+    longDescription: "BookMyBox is a robust, type-safe full-stack application engineered in TypeScript. It integrates an intelligent AI Chat Agent for natural language queries and a secure Cashfree payment gateway with cryptographic transaction verification. The backend handles high-concurrency turf bookings using Socket.IO for real-time updates, prevents double bookings, incorporates structured Winston logging for diagnostic traceability, and is fully containerized using Docker with a streamlined CI/CD pipeline for automated deployments.",
+    techStack: ["TypeScript", "React.js", "Node.js", "Express", "MongoDB", "Socket.IO", "Cashfree", "Docker", "Winston", "Vitest"],
     features: [
       {
+        title: "AI Chat Agent",
+        description: "Integrates an AI-driven booking assistant to parse natural language queries into automated booking data.",
+        icon: "message"
+      },
+      {
         title: "Real-Time WebSockets",
-        description: "Integrated Socket.IO to broadcast live slot availability, ensuring users instantly see when a turf is booked.",
+        description: "Uses Socket.IO for live slot availability and instant conflict resolution, ensuring zero double-bookings.",
         icon: "clock"
       },
       {
-        title: "WhatsApp Login",
-        description: "No need for emails or passwords—users can log in securely using WhatsApp OTPs and receive instant booking receipts.",
-        icon: "message"
-      },
-      {
-        title: "API Rate Limiting",
-        description: "Secured the Express backend using rate limiters to protect endpoints against brute-force and spam attacks.",
+        title: "Cashfree Payments",
+        description: "Secured with Cashfree payment gateway, featuring custom cryptographic payload validation and webhooks.",
         icon: "shield"
       },
       {
-        title: "WhatsApp OTP Login",
-        description: "Built a seamless login experience by integrating WhatsApp messaging for secure OTP delivery.",
-        icon: "message"
+        title: "Docker & CI/CD",
+        description: "Fully containerized using Docker and configured with automated CI/CD pipelines for seamless deployment.",
+        icon: "zap"
+      },
+      {
+        title: "Structured Logs & Vitest",
+        description: "Uses Winston logging for diagnostic traceability and Vitest for comprehensive test coverage.",
+        icon: "database"
       }
     ],
     liveUrl: "https://bookmybox.online",
